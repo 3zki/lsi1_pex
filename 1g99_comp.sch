@@ -1081,9 +1081,9 @@ alter @vd[PULSE] [ 0 0 10n 40p 40p 10n 30n ] // always L
 alter @va[PULSE] [ 0 1.8 10n 40p 40p 10n 30n ]
 alter @vc[PULSE] [ 0 0 10n 40p 40p 10n 30n ]
 tran 10p 30n
-meas tran  in1 FIND time WHEN v(y_lvs)=0.9 RISE=1 > NUL
+meas tran  in1 FIND time WHEN v(ylvs)=0.9 RISE=1 > NUL
 meas tran out1 FIND time WHEN v(y)=0.9 RISE=1 > NUL
-meas tran  in2 FIND time WHEN v(y_lvs)=0.9 FALL=1 > NUL
+meas tran  in2 FIND time WHEN v(ylvs)=0.9 FALL=1 > NUL
 meas tran out2 FIND time WHEN v(y)=0.9 FALL=1 > NUL
 
 let calc1 = out1 - in1
